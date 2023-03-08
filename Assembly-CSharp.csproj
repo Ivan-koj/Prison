@@ -45,9 +45,9 @@
      <Compile Include="Assets\npcAI.cs" />
      <Compile Include="Assets\OnCollison.cs" />
      <Compile Include="Assets\HealthBarControler.cs" />
+     <Compile Include="Assets\MainMenuContoller.cs" />
      <Compile Include="Assets\npcDestination.cs" />
      <Compile Include="Assets\movement.cs" />
-     <Compile Include="Assets\MainMenuContoller.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts\WEB\css" />
