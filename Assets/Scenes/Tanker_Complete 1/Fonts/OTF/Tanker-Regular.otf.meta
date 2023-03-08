@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1f8df64c11ace4e49b58a6e9016a3532
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Tanker
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c7a372ce4d0150c4d850c18964e14a5c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
