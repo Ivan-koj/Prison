@@ -49,6 +49,7 @@
      <Compile Include="Assets\npcDestination.cs" />
      <Compile Include="Assets\movement.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\posteri\tyler_poster" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts\WEB\css" />
      <Folder Include="Assets\Materials" />
@@ -57,11 +58,17 @@
      <Folder Include="Assets\Scenes\SampleScene" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\License" />
      <None Include="Assets\Scenes\Tanker_Complete 1\License\FFL.txt" />
+     <Folder Include="Assets\posteri\trololo" />
+     <Folder Include="Assets\posteri\hodza poster" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts\WEB\fonts" />
+     <Folder Include="Assets\posteri" />
      <Folder Include="Assets\anim (1)\anim" />
+     <Folder Include="Assets\posteri\amoguz" />
+     <Folder Include="Assets\anim (1)\bakmaz anim" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts\WEB" />
      <Folder Include="Assets\anim (1)" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\posteri\booba" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
