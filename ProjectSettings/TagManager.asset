@@ -8,6 +8,8 @@ TagManager:
   - Cube
   - card
   - npc
+  - card machine
+  - Teleport
   layers:
   - Default
   - TransparentFX
