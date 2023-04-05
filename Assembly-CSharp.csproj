@@ -48,6 +48,7 @@
      <Compile Include="Assets\MainMenuContoller.cs" />
      <Compile Include="Assets\npcDestination.cs" />
      <Compile Include="Assets\movement.cs" />
+     <Compile Include="Assets\npcDestination1.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\posteri\tyler_poster" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts" />

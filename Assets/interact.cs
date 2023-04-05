@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class interact : MonoBehaviour
 {
+    public GameObject Player;
     public Animator anim;
     public int otvoreno;
     public Transform blockPosition;
@@ -17,6 +18,9 @@ public class interact : MonoBehaviour
     public Image npcTalk;
     public Image inventori;
     public Image item1;
+    //teleport
+    public Transform tp1, tp2;
+    private float Tp;
     //Inventori
     public bool activeINV=false;
     public float playerActiveDistance;
@@ -80,6 +84,11 @@ public class interact : MonoBehaviour
                 
             }
 
+            if (hit.transform.tag == "Teleport" )
+            {
+                Teleport();
+            }
+            Teleport();
         }
         else
         {
@@ -155,6 +164,19 @@ public class interact : MonoBehaviour
             }
             
             
+        }
+    }
+    public void Teleport()
+    {
+        if (Tp == 0)
+        {
+            Player.transform.position = tp1.transform.position;
+            Tp = 1;
+        }
+        else
+        {
+            Player.transform.position = tp2.position;
+            Tp = 0;
         }
     }
 

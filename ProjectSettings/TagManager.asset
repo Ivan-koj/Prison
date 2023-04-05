@@ -9,6 +9,7 @@ TagManager:
   - card
   - npc
   - card machine
+  - teleport
   - Teleport
   layers:
   - Default
