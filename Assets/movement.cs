@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class movement : MonoBehaviour
+
 {
-    [SerializeField] private Transform playerCamera;
+    public static movement instance;
+    [SerializeField] public Transform playerCamera;
 
     [SerializeField] [Range(0.0f, 0.5f)] private float mouseSmoothTime = 0.03f;
 
-    [SerializeField] private bool cursorLock = true;
+    [SerializeField] public bool cursorLock=true;
 
     [SerializeField] private float mouseSensetivity = 3.5f;
 
@@ -38,6 +40,7 @@ public class movement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -48,6 +51,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         UpdateMouse();
         UpdateMove();
     }
@@ -79,4 +83,7 @@ public class movement : MonoBehaviour
             velocityY = -8f;
         }
     }
+    
+
+    
 }

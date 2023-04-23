@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 
 public class interact : MonoBehaviour
 {
-    public GameObject Player;
+    public Transform Player;
     public Animator anim;
     public int otvoreno;
     public Transform blockPosition;
@@ -84,11 +85,8 @@ public class interact : MonoBehaviour
                 
             }
 
-            if (hit.transform.tag == "Teleport" )
-            {
-                Teleport();
-            }
-            Teleport();
+            
+          
         }
         else
         {
@@ -114,6 +112,7 @@ public class interact : MonoBehaviour
         {
            Inventar();
         }
+        
 
         InventarItemGrab();
 
@@ -166,19 +165,7 @@ public class interact : MonoBehaviour
             
         }
     }
-    public void Teleport()
-    {
-        if (Tp == 0)
-        {
-            Player.transform.position = tp1.transform.position;
-            Tp = 1;
-        }
-        else
-        {
-            Player.transform.position = tp2.position;
-            Tp = 0;
-        }
-    }
-
+    
+    
     
 }
