@@ -11,6 +11,8 @@ TagManager:
   - card machine
   - teleport
   - Teleport
+  - Teleport1
+  - Teleport2
   layers:
   - Default
   - TransparentFX

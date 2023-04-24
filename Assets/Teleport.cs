@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Teleport : MonoBehaviour
 {
     public Transform Player;
-    public GameObject player, teleport;
+    public GameObject player, teleport,teleport1;
     public Transform tp1, tp2;
     private float telp;
     public Transform cam;
@@ -26,9 +26,13 @@ public class Teleport : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
            
-            if (hit.transform.tag == "Teleport")
+            if (hit.transform.tag == "Teleport1")
             {
                StartCoroutine(Teleport2());
+            }
+            if (hit.transform.tag == "Teleport2")
+            {
+                StartCoroutine(Teleport3());
             }
             
         }
@@ -40,12 +44,22 @@ public class Teleport : MonoBehaviour
                 StartCoroutine(Teleport1());
                 teleport.SetActive(false);
             }
+
+            if (teleport1.activeSelf)
+            {
+                StartCoroutine(Teleport1());
+                teleport1.SetActive(false);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (teleport.activeSelf)
             {
                 teleport.SetActive(false);
+            }
+            if (teleport1.activeSelf)
+            {
+                teleport1.SetActive(false);
             }
         }
        
@@ -57,20 +71,26 @@ public class Teleport : MonoBehaviour
         yield return new WaitForSeconds(4);
         teleport.SetActive(false);
     }
+    IEnumerator Teleport3()
+    {
+        teleport1.SetActive(true);
+        yield return new WaitForSeconds(4);
+        teleport1.SetActive(false);
+    }
     IEnumerator  Teleport1()
     {
         yield return new WaitForSeconds(1);
         if (telp == 0)
         {
             player.SetActive(false);
-            Player.transform.position = new Vector3(tp1.transform.position.x,tp1.transform.position.y,tp1.transform.position.z);
+            Player.transform.position = new Vector3(tp2.transform.position.x,tp2.transform.position.y,tp2.transform.position.z);
             player.SetActive(true);
             telp = 1;
         }
         else
         {
             player.SetActive(false);
-            Player.transform.position = new Vector3(tp2.transform.position.x,tp2.transform.position.y,tp2.transform.position.z);
+            Player.transform.position = new Vector3(tp1.transform.position.x,tp1.transform.position.y,tp1.transform.position.z);
             player.SetActive(true);
             telp = 0;
         }
