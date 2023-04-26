@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\interact.cs" />
-     <Compile Include="Assets\npcAI.cs" />
-     <Compile Include="Assets\Teleport.cs" />
-     <Compile Include="Assets\OnCollison.cs" />
-     <Compile Include="Assets\HealthBarControler.cs" />
-     <Compile Include="Assets\MainMenuContoller.cs" />
-     <Compile Include="Assets\npcDestination.cs" />
-     <Compile Include="Assets\movement.cs" />
-     <Compile Include="Assets\npcDestination1.cs" />
+     <Compile Include="Assets\Skripte\interact.cs" />
+     <Compile Include="Assets\Skripte\npcAI.cs" />
+     <Compile Include="Assets\Skripte\Teleport.cs" />
+     <Compile Include="Assets\Skripte\OnCollison.cs" />
+     <Compile Include="Assets\Skripte\HealthBarControler.cs" />
+     <Compile Include="Assets\Skripte\MainMenuContoller.cs" />
+     <Compile Include="Assets\Skripte\npcDestination.cs" />
+     <Compile Include="Assets\Skripte\movement.cs" />
+     <Compile Include="Assets\Skripte\npcDestination1.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\posteri\tyler_poster" />
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts" />
@@ -70,6 +70,7 @@
      <Folder Include="Assets\Scenes\Tanker_Complete 1\Fonts\WEB" />
      <Folder Include="Assets\anim (1)" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Skripte" />
      <Folder Include="Assets\posteri\booba" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
